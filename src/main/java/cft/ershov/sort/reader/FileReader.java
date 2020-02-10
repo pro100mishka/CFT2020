@@ -1,6 +1,6 @@
 package cft.ershov.sort.reader;
 
-public interface DataReader <E extends Comparable<E>> {
+public interface FileReader <E extends Comparable<E>> {
     E read();
     void close();
 }

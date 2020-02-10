@@ -1,31 +1,36 @@
 package cft.ershov.sort.separator;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
 @Data
-@NoArgsConstructor
 @Log4j2
 public class ArgSeparator {
-    private static final ArgSeparator separator = new ArgSeparator();
-    private static final Boolean INCREASE_SORT_MODE = true;
-    private static final Boolean DECREASE_SORT_MODE = false;
-    private static final Boolean TYPE_STRING = true;
-    private static final Boolean TYPE_INTEGER = false;
-    private static final Pattern pattern = Pattern.compile("\\S+\\.txt");
+    private final Boolean INCREASE_SORT_MODE = true;
+    private final Boolean DECREASE_SORT_MODE = false;
+    private final Boolean TYPE_STRING = true;
+    private final Boolean TYPE_INTEGER = false;
+    private final Pattern pattern = Pattern.compile("\\S+\\.txt");
 
-    private static final Set<String> inpFileNames = new HashSet<>();
-    private static Boolean sortMode;
-    private static Boolean typeMode;
-    private static String outFileName;
+    private final List<String> inpFileNames = new LinkedList<>();
+    private Boolean sortMode;
+    private Boolean typeMode;
+    private String outFileName;
 
-    public static boolean separation(String[] arg) {
+    private String [] arg;
+
+    public ArgSeparator(String[] arg) {
+        this.arg = arg;
+    }
+
+    public boolean separation() {
         log.info("Separation of arguments begins: " + Arrays.toString(arg));
         for (String s : arg) {
             switch (s) {
@@ -65,7 +70,7 @@ public class ArgSeparator {
         return true;
     }
 
-    private static boolean checkModeAndType(String message, Boolean modeOrType, Boolean set){
+    private boolean checkModeAndType(String message, Boolean modeOrType, Boolean set){
         if (modeOrType==null) {
             log.debug("Set "+message+" success!");
             return set;
@@ -73,7 +78,7 @@ public class ArgSeparator {
         return modeOrType;
     }
 
-    private static boolean fileNameCheck(String s){
+    private boolean fileNameCheck(String s){
         log.debug("File name verification: " + s);
         Matcher m = pattern.matcher(s);
         if (m.find()) return true;
@@ -81,7 +86,7 @@ public class ArgSeparator {
         return false;
     }
 
-    private static void addFileName(String s){
+    private void addFileName(String s){
         if (outFileName !=null){
             inpFileNames.add(s);
             log.debug("Add input file: " + s);

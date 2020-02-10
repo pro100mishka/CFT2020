@@ -1,11 +1,9 @@
 package cft.ershov.sort;
 
-import cft.ershov.sort.reader.FileHandler;
-
-import java.io.FileNotFoundException;
+import cft.ershov.sort.separator.ArgSeparator;
 
 public class App {
-    public static void main(String[] args) throws FileNotFoundException {
-        new FileHandler<String>("in1.txt");
+    public static void main(String[] args)  {
+        ArgSeparator separator = new ArgSeparator(args);
     }
 }

@@ -2,42 +2,46 @@ package cft.ershov.sort.reader;
 
 import lombok.extern.log4j.Log4j2;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 @Log4j2
-public class FileReaderImp implements FileReader {
-    private static final int DEFAULT_BUFFER_SIZE = 5;
-    private static final int DEFAULT_MAX_LENGTH = DEFAULT_BUFFER_SIZE;
+public class FileHandlerWithBuffer {
+
+    private static final int DEFAULT_BUFFER_SIZE = 1024*1024;
+    private static final int DEFAULT_MAX_LENGTH = 1024*1024;
+    private int maxLineLength;
     private String name;
+    private int bufferSize;
     private char[] buffer;
-    private BufferedReader fileReader;
+    private java.io.BufferedReader fileReader;
+    private StringBuilder result;
     private int mark;
     private int currentIndex;
     private boolean close;
     private boolean stringIsNotEnd;
-    private boolean type;
-    private StringBuilder result;
 
-    public FileReaderImp(String name,boolean type) {
+    public FileHandlerWithBuffer(String name) {
         this.name = name;
-        this.type = type;
+        this.bufferSize = DEFAULT_BUFFER_SIZE;
+        this.maxLineLength = DEFAULT_MAX_LENGTH;
         init();
     }
 
-    private void init() {
+    private void init()  {
         this.result = new StringBuilder();
         this.currentIndex = 0;
         this.close = true;
         try {
-            this.fileReader = new BufferedReader(new java.io.FileReader(name));
+            this.fileReader = new java.io.BufferedReader(new FileReader(name));
         } catch (FileNotFoundException e) {
-            log.error("File by filename: ("+name+") - not found");
+            log.error("File not found");
         }
     }
 
-    private String readString() {
+
+    public String readString() {
         result.setLength(0);
         while (close){
             if (buffer==null) readBuffer();
@@ -46,7 +50,7 @@ public class FileReaderImp implements FileReader {
                         || buffer[currentIndex] == '\r'||buffer[currentIndex] == '\n') {
                     skip();
                     break;
-                } else if (result.length()<DEFAULT_MAX_LENGTH){
+                } else if (result.length()<maxLineLength){
                     result.append(buffer[currentIndex]);
                     currentIndex++;
                     stringIsNotEnd = true;
@@ -56,13 +60,13 @@ public class FileReaderImp implements FileReader {
                 }
             }
             if (result.length()>0 && !stringIsNotEnd) return result.toString();
-            if (currentIndex==DEFAULT_BUFFER_SIZE) readBuffer();
+            if (currentIndex==bufferSize) readBuffer();
         }
         if (result.length()>0) return result.toString();
         return null;
     }
 
-    private Integer readInteger(){
+    public Integer readInteger(){
         String temp = readString();
         Integer result = null;
         if (temp!=null){
@@ -75,23 +79,9 @@ public class FileReaderImp implements FileReader {
         return result;
     }
 
-    @Override
-    public Comparable read() {
-        if (type) return readString();
-        return readInteger();
-    }
-
-    public void close() {
-        try  {
-            fileReader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     private boolean readBuffer(){
         try {
-            buffer = new char[DEFAULT_BUFFER_SIZE];
+            buffer = new char[bufferSize];
             mark=fileReader.read(buffer);
             currentIndex=0;
         } catch (IOException e) {
@@ -113,6 +103,14 @@ public class FileReaderImp implements FileReader {
                 }
             }
             close = readBuffer();
+        }
+    }
+
+    public void close() {
+        try  {
+            fileReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

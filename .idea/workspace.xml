@@ -37,18 +37,20 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/CFT_TestWork_MergeSort-master/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\java\cft\ershov\sort" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\java\cft\ershov\sort" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,7 +69,7 @@
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cft.ershov.sort.App" />
       <module name="CFT2020" />
-      <option name="PROGRAM_PARAMETERS" value="-d -d -s out.txt in1.txt in2.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-a -i out.txt in1.txt in2.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cft.ershov.sort.*" />
@@ -95,7 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581314464975</updated>
       <workItem from="1581314466472" duration="10085000" />
-      <workItem from="1581325148046" duration="6984000" />
+      <workItem from="1581325148046" duration="7068000" />
+      <workItem from="1581385436905" duration="32774000" />
     </task>
     <servers />
   </component>
@@ -114,5 +117,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((DirectByteBufferR)buffer).cleaner" custom="java.nio.DirectByteBufferR" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -24,9 +24,13 @@ public class MergeSorter {
     private Comparable temp;
     private Comparable lastWriteValue;
     private BufferedWriter fileWriter;
+    private ArgSeparator separator;
 
     public MergeSorter(String [] arg) {
-        ArgSeparator separator = new ArgSeparator(arg);
+        this.separator = new ArgSeparator(arg);
+    }
+
+    private boolean init(){
         if (separator.separation()){
             this.increase = separator.getSortMode();
             this.buffer = new ArrayList<>();
@@ -39,12 +43,16 @@ public class MergeSorter {
             try {
                 this.fileWriter = new BufferedWriter(new FileWriter(separator.getOutFileName()));
             } catch (IOException e) {
-                e.printStackTrace();
+                log.error("File can't save!");
+                return false;
             }
+            return true;
         }
+        return false;
     }
 
     public void start() {
+        if (!init()) return;
         long start = System.currentTimeMillis();
         bufferFilling();
         int index = 0;
@@ -63,7 +71,7 @@ public class MergeSorter {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                log.error("FileWriter closed error.");
             }
         }
         long end = System.currentTimeMillis()-start;

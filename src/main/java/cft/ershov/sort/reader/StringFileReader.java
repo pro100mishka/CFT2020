@@ -1,6 +1,9 @@
 package cft.ershov.sort.reader;
 
-public class StringFileReader extends FileHandlerWithBuffer implements TypeFileReader {
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
+public class StringFileReader extends FileHandler implements TypeFileReader {
 
     public StringFileReader(String name) {
         super(name);
@@ -8,6 +11,10 @@ public class StringFileReader extends FileHandlerWithBuffer implements TypeFileR
 
     @Override
     public String read() {
-        return super.readString();
+        long start = System.currentTimeMillis();
+        String result = super.readString();
+        long end = System.currentTimeMillis()-start;
+        log.debug(end);
+        return result;
     }
 }

@@ -11,7 +11,7 @@ import java.nio.channels.FileChannel;
 @Log4j2
 public class FileHandler {
     private static final int DEFAULT_BUFFER_SIZE = 8192;
-    private static final int DEFAULT_MAX_LENGTH = 100;
+    private static final int DEFAULT_MAX_LENGTH = DEFAULT_BUFFER_SIZE;
     private MappedByteBuffer buffer;
     private RandomAccessFile file;
     private StringBuilder result;

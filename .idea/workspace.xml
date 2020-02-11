@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CFT2020" />
+      <artifact name="ershov:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d103c5ee-994a-45d2-befb-885b1df4ac70" name="Default Changelist" comment="" />
+    <list default="true" id="d5574b57-24e8-4654-9156-d51c066c4ddf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ershov_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ershov.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ershov_jar/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ershov_jar/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/IntegerFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/IntegerFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/StringFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/StringFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/separator/ArgSeparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/separator/ArgSeparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/sorter/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/sorter/MergeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.Properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CFT2020.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/FileHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/FileWorkerWithBuffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/IntegerFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/StringFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/TypeFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/separator/ArgSeparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/sorter/MergeSorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.Properties" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,27 +63,43 @@
     </option>
   </component>
   <component name="ProjectId" id="1XbUojGd5fq4PWkIrIPq8JDOHol" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="CFT2020" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/CFT_TestWork_MergeSort-master/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/CFT2020" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GBUni\HydroBook\CFT2020\src\main\resources" />
+      <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\ershov_jar" />
       <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\java\cft\ershov\sort" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\CFT2020" />
+      <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\CST2020" />
+      <recent name="C:\GBUni\HydroBook\CFT2020" />
+      <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,9 +116,14 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="cft.ershov.sort.App" />
-      <module name="CFT2020" />
+      <module name="ershov" />
       <option name="PROGRAM_PARAMETERS" value="-a -i out.txt in1.txt in2.txt" />
+      <shortenClasspath name="NONE" />
+      <option name="ENABLE_SWING_INSPECTOR" value="true" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cft.ershov.sort.*" />
@@ -91,7 +145,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d103c5ee-994a-45d2-befb-885b1df4ac70" name="Default Changelist" comment="" />
+      <changelist id="d5574b57-24e8-4654-9156-d51c066c4ddf" name="Default Changelist" comment="" />
       <created>1581314464975</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -99,6 +153,8 @@
       <workItem from="1581314466472" duration="10085000" />
       <workItem from="1581325148046" duration="7068000" />
       <workItem from="1581385436905" duration="32774000" />
+      <workItem from="1581427860536" duration="3709000" />
+      <workItem from="1581432432019" duration="758000" />
     </task>
     <servers />
   </component>

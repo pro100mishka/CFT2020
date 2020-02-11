@@ -32,41 +32,46 @@ public class ArgSeparator {
 
     public boolean separation() {
         log.info("Separation of arguments begins: " + Arrays.toString(arg));
-        for (String s : arg) {
-            switch (s) {
-                case "-a":
-                    sortMode = checkModeAndType("increase",sortMode,INCREASE_SORT_MODE);
-                    break;
-                case "-d":
-                    sortMode = checkModeAndType("decrease",sortMode,DECREASE_SORT_MODE);
-                    break;
-                case "-s":
-                    typeMode = checkModeAndType("type string",typeMode,TYPE_STRING);
-                    break;
-                case "-i":
-                    typeMode = checkModeAndType("type integer",typeMode,TYPE_INTEGER);
-                    break;
-                default:
-                    if (fileNameCheck(s)) addFileName(s);
-                    break;
+        if  (arg.length>0){
+            for (String s : arg) {
+                switch (s) {
+                    case "-a":
+                        sortMode = checkModeAndType("increase",sortMode,INCREASE_SORT_MODE);
+                        break;
+                    case "-d":
+                        sortMode = checkModeAndType("decrease",sortMode,DECREASE_SORT_MODE);
+                        break;
+                    case "-s":
+                        typeMode = checkModeAndType("type string",typeMode,TYPE_STRING);
+                        break;
+                    case "-i":
+                        typeMode = checkModeAndType("type integer",typeMode,TYPE_INTEGER);
+                        break;
+                    default:
+                        if (fileNameCheck(s)) addFileName(s);
+                        break;
+                }
             }
+            if (sortMode==null) sortMode = INCREASE_SORT_MODE;
+            if (typeMode==null){
+                log.error("Sort data type error");
+                return false;
+            } else if (outFileName ==null){
+                log.error("Missing output file name");
+                return false;
+            } else if (inpFileNames.isEmpty()){
+                log.error("Missing source file names");
+                return false;
+            }
+            log.info("Argument separation done! "+
+                    " Sort mode: increase(true)/decrease(false): " + sortMode+
+                    ", sort type: string(true)/integer(false): " + typeMode+
+                    ", output filename: " + outFileName+
+                    ", input filenames: " + inpFileNames.toString());
+        } else {
+            log.error("Arg not found.");
+            return false;
         }
-        if (sortMode==null) sortMode = INCREASE_SORT_MODE;
-        if (typeMode==null){
-            log.error("Sort data type error");
-            return false;
-        } else if (outFileName ==null){
-            log.error("Missing output file name");
-            return false;
-        } else if (inpFileNames.isEmpty()){
-            log.error("Missing source file names");
-            return false;
-        }
-        log.info("Argument separation done! "+
-                " Sort mode: increase(true)/decrease(false): " + sortMode+
-                ", sort type: string(true)/integer(false): " + typeMode+
-                ", output filename: " + outFileName+
-                ", input filenames: " + inpFileNames.toString());
         return true;
     }
 

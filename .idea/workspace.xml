@@ -8,32 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5574b57-24e8-4654-9156-d51c066c4ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ershov_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ershov.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/ershov_jar/in1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/ershov_jar/in2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/IntegerFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/IntegerFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/StringFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/reader/StringFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/separator/ArgSeparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/separator/ArgSeparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/sorter/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cft/ershov/sort/sorter/MergeSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.Properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CFT2020.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/FileHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/FileWorkerWithBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/IntegerFileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/StringFileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/reader/TypeFileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/separator/ArgSeparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cft/ershov/sort/sorter/MergeSorter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.Properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,16 +65,16 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GBUni\HydroBook\CFT2020\src\main\resources" />
-      <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\ershov_jar" />
-      <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\java\cft\ershov\sort" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\CFT2020" />
       <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\CST2020" />
       <recent name="C:\GBUni\HydroBook\CFT2020" />
       <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GBUni\HydroBook\CFT2020\src\main\resources" />
+      <recent name="C:\GBUni\HydroBook\CFT2020\out\artifacts\ershov_jar" />
+      <recent name="C:\Users\Ershov\Documents\GB\S1\CFT2020\src\main\java\cft\ershov\sort" />
     </key>
   </component>
   <component name="RunDashboard">
